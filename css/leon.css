@@ -1,0 +1,80 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;margin: 0;
+    border: none;outline: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+::selection{
+    background: #f25;
+    color: #fff;
+}
+html{
+    overflow-x: hidden;
+}
+.game{
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(to right, #f25 , #833ab4 , #fd1d1d);
+    background-size: 400% 400%;
+    width: 350px;
+    margin:10% auto;
+    animation: bg-game 10s infinite ease-in-out;
+}
+@keyframes bg-game {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.head{
+    font-weight: bolder;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.head span{
+    color: gold;
+}
+.box{
+    background: #f25;
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin: 10px 10px 10px 15px;
+    color: #fff;
+    font-size: 75px;
+    border-radius: 4px;
+}
+.box:hover{
+    background: #00070f;
+    cursor: pointer;
+    color: #f25;
+}
+@media (max-width : 350px) {
+    .game{
+        width: 300px;
+    }
+    .box{
+width: 70px;height: 70px;}}
+.vid video{
+    z-index: -30;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50% , -50%);
+    left: 50%;top: 50%;
+}

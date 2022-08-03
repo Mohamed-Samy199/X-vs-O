@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X O</title>
+    <link rel="stylesheet" href="css/leon.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="icon" href="images/star.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="game">
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/hpxruznz.json"
+            trigger="loop"
+            delay="2000"
+            colors="primary:#ffffff,secondary:#08a88a"
+            style="width: 50px; height: 50px">
+        </lord-icon>
+        <div class="head" id="head"><span>X O</span> GAME</div>
+        <div class="box" id="box1" onclick="game(this.id)"></div>
+        <div class="box" id="box2" onclick="game(this.id)"></div>
+        <div class="box" id="box3" onclick="game(this.id)"></div>
+        <div class="box" id="box4" onclick="game(this.id)"></div>
+        <div class="box" id="box5" onclick="game(this.id)"></div>
+        <div class="box" id="box6" onclick="game(this.id)"></div>
+        <div class="box" id="box7" onclick="game(this.id)"></div>
+        <div class="box" id="box8" onclick="game(this.id)"></div>
+        <div class="box" id="box9" onclick="game(this.id)"></div>
+        <div class="vid">
+            <video src="images/vid.mp4" loop muted autoplay></video>
+        </div>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
